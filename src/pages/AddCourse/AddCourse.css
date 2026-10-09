@@ -1,0 +1,124 @@
+.add-course-page {
+  width: 100%;
+}
+
+.add-course-top {
+  margin-bottom: 25px;
+}
+
+.back-course-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.add-course-top h1 {
+  font-size: 28px;
+  color: #172554;
+  margin-bottom: 6px;
+}
+
+.add-course-top p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.course-form {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.course-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.course-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.course-form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-form-group input,
+.course-form-group select,
+.course-form-group textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  padding: 11px 12px;
+  outline: none;
+  font-size: 14px;
+  color: #172554;
+  background-color: white;
+}
+
+.course-form-group input:focus,
+.course-form-group select:focus,
+.course-form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.course-form-group textarea {
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.course-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.course-cancel-button,
+.course-save-button {
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.course-cancel-button {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.course-save-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.course-save-button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .course-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+}

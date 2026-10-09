@@ -1,0 +1,115 @@
+.edit-teacher-page {
+  width: 100%;
+}
+
+.edit-teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.edit-teacher-header h1 {
+  color: #172554;
+  margin-bottom: 5px;
+}
+
+.edit-teacher-header p {
+  color: #64748b;
+}
+
+.edit-teacher-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.teacher-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.teacher-form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.teacher-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-form-group input,
+.teacher-form-group select,
+.teacher-form-group textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 11px;
+  outline: none;
+  font-size: 14px;
+}
+
+.teacher-form-group input:focus,
+.teacher-form-group select:focus,
+.teacher-form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.teacher-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.teacher-cancel-button,
+.teacher-save-button {
+  padding: 11px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.teacher-cancel-button {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+.teacher-save-button {
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.teacher-back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  padding: 10px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .teacher-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .edit-teacher-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,176 @@
+.students-page {
+  width: 100%;
+}
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.students-header h1 {
+  font-size: 28px;
+  color: #172554;
+  margin-bottom: 5px;
+}
+
+.students-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.add-student-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-student-button:hover {
+  background-color: #1d4ed8;
+}
+
+.students-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+.students-search svg {
+  color: #64748b;
+}
+
+.students-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #172554;
+}
+
+.students-table-container {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.students-table th {
+  text-align: left;
+  padding: 15px;
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.students-table td {
+  padding: 15px;
+  color: #334155;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.students-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status.inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.student-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.student-actions button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-button {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 700px) {
+  .students-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .students-header h1 {
+    font-size: 24px;
+  }
+
+  .add-student-button {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+.student-name-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.student-name-link:hover {
+  text-decoration: underline;
+}
+
+.view-button {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}

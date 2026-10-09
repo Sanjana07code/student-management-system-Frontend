@@ -1,0 +1,139 @@
+.student-details-page {
+  width: 100%;
+}
+
+.student-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.student-details-header h1 {
+  font-size: 28px;
+  color: #172554;
+  margin-bottom: 5px;
+}
+
+.student-details-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.back-students-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-profile-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.student-profile-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.student-basic-info {
+  flex: 1;
+}
+
+.student-basic-info h2 {
+  color: #172554;
+  margin-bottom: 5px;
+}
+
+.student-basic-info p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.student-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.edit-student-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.student-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-item span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.info-item strong {
+  color: #172554;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+
+  .student-details-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .student-profile-top {
+    flex-wrap: wrap;
+  }
+
+  .student-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-student-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

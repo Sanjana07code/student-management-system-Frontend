@@ -1,0 +1,192 @@
+.sidebar {
+  width: 240px;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #172554;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.sidebar-logo {
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 25px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+.sidebar-logo svg {
+  color: #60a5fa;
+
+  font-size: 25px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.sidebar-nav {
+  flex: 1;
+
+  padding: 25px 15px;
+
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  padding: 0 12px;
+
+  margin-bottom: 12px;
+
+  color: #93c5fd;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px;
+
+  margin-bottom: 5px;
+
+  border-radius: 7px;
+
+  color: #cbd5e1;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.sidebar-link svg {
+  width: 17px;
+
+  font-size: 15px;
+}
+
+.sidebar-link:hover {
+  background-color: #1e3a8a;
+
+  color: #ffffff;
+}
+
+.sidebar-link.active {
+  background-color: #2563eb;
+
+  color: #ffffff;
+}
+
+.sidebar-account-title {
+  margin-top: 28px;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.sidebar-bottom {
+  padding: 15px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logout-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: transparent;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.logout-button:hover {
+  background-color: #1e3a8a;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .sidebar {
+    width: 70px;
+  }
+
+  .sidebar-logo {
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .sidebar-logo span,
+  .sidebar-link span,
+  .sidebar-title,
+  .logout-button span {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+
+    padding: 13px 0;
+  }
+
+  .logout-button {
+    justify-content: center;
+  }
+}

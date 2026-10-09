@@ -1,0 +1,155 @@
+.teachers-page {
+  width: 100%;
+}
+
+.teachers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.teachers-header h1 {
+  color: #172554;
+  margin-bottom: 5px;
+}
+
+.teachers-header p {
+  color: #64748b;
+}
+
+.add-teacher-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.add-teacher-button:hover {
+  background-color: #1d4ed8;
+}
+
+.teachers-search {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.teachers-search svg {
+  color: #64748b;
+}
+
+.teachers-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.teachers-table-container {
+  background-color: white;
+  border-radius: 10px;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+}
+
+.teachers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.teachers-table th,
+.teachers-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.teachers-table th {
+  background-color: #f8fafc;
+  color: #475569;
+}
+
+.teachers-table td {
+  color: #334155;
+}
+
+.teacher-name-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.teacher-name-link:hover {
+  text-decoration: underline;
+}
+
+.teacher-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.teacher-status.active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.teacher-status.inactive {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.teacher-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.teacher-view-button,
+.teacher-edit-button,
+.teacher-delete-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.teacher-view-button {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.teacher-edit-button {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.teacher-delete-button {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+@media (max-width: 700px) {
+  .teachers-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

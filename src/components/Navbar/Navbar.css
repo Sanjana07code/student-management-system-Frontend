@@ -1,0 +1,207 @@
+.navbar {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 16px 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  text-decoration: none;
+
+  color: #2563eb;
+
+  white-space: nowrap;
+}
+
+.navbar-logo svg {
+  font-size: 27px;
+}
+
+.brand-name {
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+.brand-divider {
+  width: 1px;
+
+  height: 23px;
+
+  background-color: #d1d5db;
+
+  margin: 0 3px;
+}
+
+.brand-subtitle {
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #2563eb;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.navbar-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.login-button,
+.register-button {
+  text-decoration: none;
+
+  padding: 9px 18px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.login-button {
+  color: #2563eb;
+
+  background-color: #ffffff;
+
+  border: 1px solid #2563eb;
+}
+
+.register-button {
+  color: #ffffff;
+
+  background-color: #2563eb;
+
+  border: 1px solid #2563eb;
+}
+
+.login-button:hover {
+  background-color: #eff6ff;
+}
+
+.register-button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .brand-subtitle,
+  .brand-divider {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 19px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 14px 20px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .brand-name {
+    font-size: 17px;
+  }
+
+  .navbar-buttons {
+    gap: 6px;
+  }
+
+  .login-button,
+  .register-button {
+    padding: 8px 12px;
+  }
+}
